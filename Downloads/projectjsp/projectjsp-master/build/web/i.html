@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+Author :Eliana Marquez,  Estiven Mazo , Sergio Buitrago
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <TABLE id="tabla">
+    <tr>
+        <TH>Cod_Cliente</TH>
+        <TH>Nombre</TH>
+        <TH>Apellidos</TH>
+    </tr>
+    <tr>
+        <TD>001</TD>
+        <TD>Alberto</TD>
+        <TD>Garcia</TD>
+    </tr>
+    <tr>
+        <TD>002</TD>
+        <TD>Paco</TD>
+        <TD>Montes</TD>
+    </tr>
+</TABLE>
+
+<script>
+
+document.getElementById("tabla").onclick=function(e){ 
+    // obtenemos el elemento sobre el que se ha hecho click
+    if(!e)e=window.event; 
+    if(!e.target) e.target=e.srcElement; 
+    // e.target ahora simboliza la celda en la que hemos hecho click
+    // subimos de nivel hasta encontrar un tr
+    var TR=e.target;
+    while( TR.nodeType==1 && TR.tagName.toUpperCase()!="TR" )
+        TR=TR.parentNode;
+    var celdas=TR.getElementsByTagName("TD");
+    // cogemos la primera celda TD del tr (si existe)
+    if( celdas.length!=0 )
+        // devolvemos su contenido
+        alert( celdas[0].innerHTML );
+}
+</script>
+    </body>
+</html>

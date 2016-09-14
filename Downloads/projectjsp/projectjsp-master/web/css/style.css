@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-jun-2016, 23:55:44
+    Author     : Eliana Marquez
+*/
+/*.categoria{
+    background-color: blanchedalmond;
+    border: 3px blue solid;
+}*/
+/*.proyecto{
+    display: inline-table;
+    width: 15%;
+    height: 150px;
+    padding: 10px;
+    border: 1px blue solid;
+    margin: 5px;
+    border-radius: 5%;
+}*/
+/*.reloj{
+    font-size: 20px;
+    float: right;
+}*/
+/*body{
+    display: inline-table;
+}*/
+
+.proyecto:hover{
+    background-color:#fc7323;/*da un giro de 180G cuando se ponga el puntero*/
+    color: #FFFFFF;
+}
+
+
+/*
+.lado{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;oculta el lado de atras de la carta
+    position: absolute;
+}*/
+
+/*.button {
+  list-style: none;
+  overflow: hidden;  Limpiamos errores de float 
+}
+
+.button {
+  margin-top: 10%;
+  margin-left: 90%;
+  float: right;
+  position: fixed;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.button{
+  display: block;  Convertimos los elementos a en elementos bloque para manipular el padding 
+  padding: 20px;
+  color: #00796b;
+  text-decoration: none;
+}
+
+.button {
+  background: #3ead47;
+}
+#validar{
+    width: 250px;
+    background-color: red;
+    display:none;
+    
+}*/
+
